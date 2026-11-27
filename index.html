@@ -93,7 +93,7 @@ footer p{font-size:.85rem;margin-bottom:16px}
 footer nav{display:flex;gap:18px;font-size:.85rem}
 footer a{color:#fff;text-decoration:none;opacity:.9}
 .copy{margin-top:16px;font-size:.75rem;opacity:.55}
-</style>
+a.lesson,a.sit,a.step{text-decoration:none;color:inherit}a.lesson{display:flex}a.sit{display:block}</style>
 </head>
 <body>
 <header class="top">
@@ -105,9 +105,9 @@ footer a{color:#fff;text-decoration:none;opacity:.9}
   <span class="pill"><i></i>دروس مجانية بالعربية</span>
   <h1>تعلم <span class="en hl">English</span> بطريقة بسيطة وواضحة</h1>
   <p>دروس قصيرة كتمشي معاك من الصفر حتى تهضر بثقة.</p>
-  <div class="cta"><a class="btn p" href="#">ابدأ من هنا</a><a class="btn s" href="#">شوف الدروس</a></div>
+  <div class="cta"><a class="btn p" href="lesson-01.html">ابدأ من هنا</a><a class="btn s" href="lessons.html">شوف الدروس</a></div>
   <div class="stats">
-    <div class="stat"><b class="en">15+</b><span>درس</span></div>
+    <div class="stat"><b class="en">15</b><span>درس</span></div>
     <div class="stat"><b class="en">A1–B1</b><span>المستويات</span></div>
     <div class="stat"><b class="en">0</b><span>درهم</span></div>
   </div>
@@ -119,29 +119,27 @@ footer a{color:#fff;text-decoration:none;opacity:.9}
 </div>
 
 <section>
-  <div class="sh"><h2>مسار التعلم</h2><a href="#">الكل</a></div>
+  <div class="sh"><h2>مسار التعلم</h2><a href="lessons.html">الكل</a></div>
   <div class="path">
-    <div class="step"><div class="lv a">A1</div><div><h3>مبتدئ</h3><p>الحروف، التحيات، الأرقام</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
-    <div class="step"><div class="lv b">A2</div><div><h3>متوسط</h3><p>الأزمنة والمحادثات اليومية</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
-    <div class="step"><div class="lv c">B1</div><div><h3>متقدم</h3><p>الخدمة والمقابلات</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
+    <a class="step" href="lessons.html#a1"><div class="lv a">A1</div><div><h3>مبتدئ</h3><p>الحروف، التحيات، الأرقام</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></a>
+    <a class="step" href="lessons.html#a2"><div class="lv b">A2</div><div><h3>متوسط</h3><p>الأزمنة والمحادثات اليومية</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></a>
+    <a class="step" href="lessons.html#b1"><div class="lv c">B1</div><div><h3>متقدم</h3><p>الخدمة والمقابلات</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></a>
   </div>
 </section>
 
 <section>
-  <div class="sh"><h2>مواقف من الحياة</h2><a href="#">الكل</a></div>
+  <div class="sh"><h2>مواقف من الحياة</h2><a href="lessons.html">الكل</a></div>
   <div class="grid">
-    <div class="sit"><div class="ic" style="background:#fff1e0"><svg viewBox="0 0 24 24" style="stroke:#e08a1e"><path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8zM16 10h2a2 2 0 0 1 0 4h-2M7 3v2M11 3v2"/></svg></div><h3>فالمقهى</h3><small class="en">At a café</small></div>
-    <div class="sit"><div class="ic" style="background:#e3f6ef"><svg viewBox="0 0 24 24" style="stroke:#12a47a"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><h3>فالتليفون</h3><small class="en">Phone calls</small></div>
-    <div class="sit"><div class="ic" style="background:#eceefd"><svg viewBox="0 0 24 24" style="stroke:#3b4fe4"><path d="M10 14L3 11l18-8-8 18-3-7zM10 14l11-11"/></svg></div><h3>فالسفر</h3><small class="en">Travel</small></div>
-    <div class="sit"><div class="ic" style="background:#ffeae4"><svg viewBox="0 0 24 24" style="stroke:#e0512f"><path d="M4 8h16v11H4zM9 8V5h6v3"/></svg></div><h3>فالخدمة</h3><small class="en">Job interview</small></div>
+    <a class="sit" href="lesson-08.html"><div class="ic" style="background:#fff1e0"><svg viewBox="0 0 24 24" style="stroke:#e08a1e"><path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8zM16 10h2a2 2 0 0 1 0 4h-2M7 3v2M11 3v2"/></svg></div><h3>فالمقهى</h3><small class="en">At a café</small></a>
+    <a class="sit" href="lesson-09.html"><div class="ic" style="background:#e3f6ef"><svg viewBox="0 0 24 24" style="stroke:#12a47a"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><h3>فالتليفون</h3><small class="en">Phone calls</small></a>
+    <a class="sit" href="lesson-10.html"><div class="ic" style="background:#eceefd"><svg viewBox="0 0 24 24" style="stroke:#3b4fe4"><path d="M10 14L3 11l18-8-8 18-3-7zM10 14l11-11"/></svg></div><h3>فالسفر</h3><small class="en">Travel</small></a>
+    <a class="sit" href="lessons.html#situations"><div class="ic" style="background:#ffeae4"><svg viewBox="0 0 24 24" style="stroke:#e0512f"><path d="M4 8h16v11H4zM9 8V5h6v3"/></svg></div><h3>فالخدمة</h3><small class="en">Job interview</small></a>
   </div>
 </section>
 
 <section>
-  <div class="sh"><h2>أحدث الدروس</h2><a href="#">الكل</a></div>
-  <div class="lesson"><div class="num">01</div><div><h3>التحيات والتعارف</h3><div class="meta"><span class="tag">مبتدئ</span><span>5 دقائق</span></div></div></div>
-  <div class="lesson"><div class="num">02</div><div><h3>كيفاش تقدم راسك</h3><div class="meta"><span class="tag">مبتدئ</span><span>6 دقائق</span></div></div></div>
-  <div class="lesson"><div class="num">03</div><div><h3>فالمقهى والمطعم</h3><div class="meta"><span class="tag">مواقف</span><span>7 دقائق</span></div></div></div>
+  <div class="sh"><h2>أحدث الدروس</h2><a href="lessons.html">الكل</a></div>
+<a class="lesson" href="lesson-03.html"><div class="num">03</div><div><h3>التحيات والتعارف: <span class="en">Greetings</span></h3><div class="meta"><span class="tag">مبتدئ</span><span>7 دقائق</span></div></div></a><a class="lesson" href="lesson-04.html"><div class="num">04</div><div><h3>كيفاش تقدم راسك: <span class="en">Introduce yourself</span></h3><div class="meta"><span class="tag">مبتدئ</span><span>7 دقائق</span></div></div></a><a class="lesson" href="lesson-08.html"><div class="num">08</div><div><h3>فالمقهى والمطعم: <span class="en">At a caf</span>é</h3><div class="meta"><span class="tag">مواقف</span><span>7 دقائق</span></div></div></a>
 </section>
 
 <section>
@@ -150,13 +148,13 @@ footer a{color:#fff;text-decoration:none;opacity:.9}
     <span class="lab">خطأ شائع</span>
     <div class="row x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="en">I have 25 years</span></div>
     <div class="row v"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><span class="en">I am 25 years old</span></div>
-    <p>ترجمة حرفية من الفرنسية والدارجة. شوف الأخطاء الباقية.</p>
+    <p>ترجمة حرفية من الفرنسية والدارجة. <a href="lesson-12.html" style="color:var(--brand);font-weight:700">شوف الأخطاء الباقية</a>.</p>
   </div>
 </section>
 
 <footer>
   <div class="brand"><div class="mark">E</div><span class="en">Englishy</span></div>
-  <p>تعلم الإنجليزية بالعربية، من تجربة مغربي كيتعلم بحالك.</p>
+  <p>دروس الإنجليزية بالعربية، من الصفر وبخطوات صغيرة.</p>
   <nav><a href="about.html">من أنا</a><a href="contact.html">اتصل بنا</a><a href="privacy.html">الخصوصية</a></nav>
   <div class="copy"><span class="en">© 2026</span></div>
 </footer>
