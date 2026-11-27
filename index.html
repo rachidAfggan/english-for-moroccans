@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Englishy | تعلم الإنجليزية للمغاربة</title>
+<meta name="description" content="دروس مجانية لتعلم الإنجليزية بالعربية، من الصفر حتى المستوى المتوسط.">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#f5f6fa;--surface:#fff;--ink:#0e1530;--ink2:#4a5373;--mute:#8b93ad;
+  --navy:#0e1a45;--navy2:#1a2a6c;--accent:#ff6b4a;--brand:#3b4fe4;--brand-soft:#eceefd;
+  --line:#e6e8f1;--ok:#12a47a;
+  --shadow:0 1px 2px rgba(14,21,48,.05),0 8px 24px -8px rgba(14,21,48,.12);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Cairo',sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+.en{font-family:'Inter','Cairo',sans-serif;direction:ltr;unicode-bidi:isolate;display:inline-block}
+.wrap{padding:0 20px}
+/* top bar */
+.top{position:sticky;top:0;z-index:5;display:flex;align-items:center;justify-content:space-between;padding:14px 20px;background:rgba(245,246,250,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:1.05rem}
+.mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--navy2));display:grid;place-items:center;color:#fff;font-family:'Inter';font-weight:800;font-size:.95rem}
+.burger{width:40px;height:40px;border-radius:12px;background:var(--surface);border:1px solid var(--line);display:grid;place-items:center}
+.burger svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2;stroke-linecap:round}
+/* hero */
+.hero{margin:18px 20px 0;border-radius:24px;padding:26px 22px 40px;color:#fff;position:relative;overflow:hidden;background:radial-gradient(120% 90% at 0% 0%,#2c3fb8 0%,transparent 60%),linear-gradient(160deg,var(--navy2),var(--navy));box-shadow:0 18px 40px -16px rgba(14,26,69,.55)}
+.hero::after{content:"";position:absolute;width:220px;height:220px;border-radius:50%;left:-70px;bottom:-110px;background:rgba(255,107,74,.22);filter:blur(10px)}
+.pill{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);padding:4px 12px;border-radius:999px;font-size:.78rem;font-weight:600}
+.pill i{width:7px;height:7px;border-radius:50%;background:#5eead4}
+.hero h1{font-size:1.95rem;line-height:1.4;font-weight:800;margin:14px 0 10px;position:relative}
+.hero h1 .hl{color:#ffb4a3}
+.hero p{color:rgba(255,255,255,.78);font-size:.98rem;margin-bottom:20px;position:relative;max-width:30ch}
+.cta{display:flex;gap:10px;position:relative}
+.btn{flex:1;text-align:center;padding:13px 14px;border-radius:14px;font-weight:700;font-size:.98rem;text-decoration:none}
+.btn.p{background:var(--accent);color:#fff;box-shadow:0 8px 18px -6px rgba(255,107,74,.7)}
+.btn.s{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.2)}
+.stats{display:flex;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.14);position:relative}
+.stat{flex:1}
+.stat b{display:block;font-family:'Inter';font-size:1.25rem;font-weight:700}
+.stat span{display:block;font-size:.78rem;color:rgba(255,255,255,.65)}
+.stat b.en{display:block;text-align:right}
+/* card of the day */
+.daily{margin:-14px 36px 0;position:relative;z-index:2;background:var(--surface);border-radius:18px;padding:14px 16px;box-shadow:var(--shadow);display:flex;align-items:center;gap:14px}
+.daily .ic{flex:none;width:42px;height:42px;border-radius:12px;background:var(--brand-soft);display:grid;place-items:center}
+.daily .ic svg{width:20px;height:20px;stroke:var(--brand);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.daily small{display:block;font-size:.74rem;color:var(--mute);font-weight:600}
+.daily .en{font-weight:600;font-size:1.02rem}
+.daily .ar{font-size:.85rem;color:var(--ink2)}
+/* sections */
+section{padding:30px 20px 0}
+.sh{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:14px}
+.sh h2{font-size:1.2rem;font-weight:800}
+.sh a{font-size:.85rem;color:var(--brand);font-weight:700;text-decoration:none}
+/* path */
+.path{background:var(--surface);border-radius:20px;padding:6px 16px;box-shadow:var(--shadow)}
+.step{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line);align-items:center}
+.step:last-child{border-bottom:0}
+.lv{flex:none;width:46px;height:46px;border-radius:14px;display:grid;place-items:center;font-family:'Inter';font-weight:800;font-size:.95rem}
+.lv.a{background:#e3f6ef;color:var(--ok)}.lv.b{background:var(--brand-soft);color:var(--brand)}.lv.c{background:#ffeae4;color:#e0512f}
+.step h3{font-size:1rem;font-weight:700}
+.step p{font-size:.82rem;color:var(--ink2)}
+.step .go{margin-inline-start:auto;width:30px;height:30px;border-radius:50%;background:var(--bg);display:grid;place-items:center}
+.step .go svg{width:14px;height:14px;stroke:var(--ink2);fill:none;stroke-width:2.4;stroke-linecap:round;stroke-linejoin:round}
+/* situations */
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.sit{background:var(--surface);border-radius:18px;padding:16px;box-shadow:var(--shadow)}
+.sit .ic{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;margin-bottom:12px}
+.sit .ic svg{width:20px;height:20px;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.sit h3{font-size:.98rem;font-weight:700}
+.sit small{color:var(--mute);font-size:.78rem}
+/* lessons */
+.lesson{display:flex;gap:14px;align-items:center;background:var(--surface);border-radius:18px;padding:12px;margin-bottom:10px;box-shadow:var(--shadow)}
+.num{flex:none;width:52px;height:52px;border-radius:14px;background:linear-gradient(135deg,var(--brand-soft),#fff);border:1px solid var(--line);display:grid;place-items:center;font-family:'Inter';font-weight:800;color:var(--brand);font-size:1.1rem}
+.lesson h3{font-size:.98rem;font-weight:700;line-height:1.4}
+.meta{display:flex;gap:10px;align-items:center;margin-top:3px;font-size:.78rem;color:var(--mute)}
+.tag{background:#e3f6ef;color:var(--ok);padding:0 9px;border-radius:999px;font-weight:700;font-size:.72rem}
+/* mistake */
+.mis{background:var(--surface);border-radius:20px;padding:18px;box-shadow:var(--shadow);border:1px solid var(--line)}
+.mis .lab{display:inline-block;font-size:.74rem;font-weight:700;color:#e0512f;background:#ffeae4;border-radius:999px;padding:1px 10px;margin-bottom:12px}
+.row{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:12px;margin-bottom:8px;font-weight:600}
+.row.x{background:#fff3f0;color:#c2410c}.row.x .en{text-decoration:line-through;text-decoration-color:#f08a70}
+.row.v{background:#e9f8f2;color:#0b7a5a}
+.row svg{flex:none;width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2.6;stroke-linecap:round;stroke-linejoin:round}
+.mis p{font-size:.85rem;color:var(--ink2);margin-top:6px}
+/* footer */
+footer{margin-top:36px;background:var(--navy);color:rgba(255,255,255,.7);padding:26px 20px 30px;border-radius:26px 26px 0 0}
+footer .brand{color:#fff;margin-bottom:8px}
+footer p{font-size:.85rem;margin-bottom:16px}
+footer nav{display:flex;gap:18px;font-size:.85rem}
+footer a{color:#fff;text-decoration:none;opacity:.9}
+.copy{margin-top:16px;font-size:.75rem;opacity:.55}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="brand"><div class="mark">E</div><span><span class="en">Englishy</span></span></div>
+  <div class="burger"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h10"/></svg></div>
+</header>
+
+<div class="hero">
+  <span class="pill"><i></i>دروس مجانية بالعربية</span>
+  <h1>تعلم <span class="en hl">English</span> بطريقة بسيطة وواضحة</h1>
+  <p>دروس قصيرة كتمشي معاك من الصفر حتى تهضر بثقة.</p>
+  <div class="cta"><a class="btn p" href="#">ابدأ من هنا</a><a class="btn s" href="#">شوف الدروس</a></div>
+  <div class="stats">
+    <div class="stat"><b class="en">15+</b><span>درس</span></div>
+    <div class="stat"><b class="en">A1–B1</b><span>المستويات</span></div>
+    <div class="stat"><b class="en">0</b><span>درهم</span></div>
+  </div>
+</div>
+
+<div class="daily">
+  <div class="ic"><svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></div>
+  <div><small>جملة اليوم</small><span class="en">How are you doing?</span><div class="ar">كيداير؟ كيف الأحوال؟</div></div>
+</div>
+
+<section>
+  <div class="sh"><h2>مسار التعلم</h2><a href="#">الكل</a></div>
+  <div class="path">
+    <div class="step"><div class="lv a">A1</div><div><h3>مبتدئ</h3><p>الحروف، التحيات، الأرقام</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
+    <div class="step"><div class="lv b">A2</div><div><h3>متوسط</h3><p>الأزمنة والمحادثات اليومية</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
+    <div class="step"><div class="lv c">B1</div><div><h3>متقدم</h3><p>الخدمة والمقابلات</p></div><div class="go"><svg viewBox="0 0 24 24"><path d="M15 6l-6 6 6 6"/></svg></div></div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><h2>مواقف من الحياة</h2><a href="#">الكل</a></div>
+  <div class="grid">
+    <div class="sit"><div class="ic" style="background:#fff1e0"><svg viewBox="0 0 24 24" style="stroke:#e08a1e"><path d="M4 8h12v6a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8zM16 10h2a2 2 0 0 1 0 4h-2M7 3v2M11 3v2"/></svg></div><h3>فالمقهى</h3><small class="en">At a café</small></div>
+    <div class="sit"><div class="ic" style="background:#e3f6ef"><svg viewBox="0 0 24 24" style="stroke:#12a47a"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg></div><h3>فالتليفون</h3><small class="en">Phone calls</small></div>
+    <div class="sit"><div class="ic" style="background:#eceefd"><svg viewBox="0 0 24 24" style="stroke:#3b4fe4"><path d="M10 14L3 11l18-8-8 18-3-7zM10 14l11-11"/></svg></div><h3>فالسفر</h3><small class="en">Travel</small></div>
+    <div class="sit"><div class="ic" style="background:#ffeae4"><svg viewBox="0 0 24 24" style="stroke:#e0512f"><path d="M4 8h16v11H4zM9 8V5h6v3"/></svg></div><h3>فالخدمة</h3><small class="en">Job interview</small></div>
+  </div>
+</section>
+
+<section>
+  <div class="sh"><h2>أحدث الدروس</h2><a href="#">الكل</a></div>
+  <div class="lesson"><div class="num">01</div><div><h3>التحيات والتعارف</h3><div class="meta"><span class="tag">مبتدئ</span><span>5 دقائق</span></div></div></div>
+  <div class="lesson"><div class="num">02</div><div><h3>كيفاش تقدم راسك</h3><div class="meta"><span class="tag">مبتدئ</span><span>6 دقائق</span></div></div></div>
+  <div class="lesson"><div class="num">03</div><div><h3>فالمقهى والمطعم</h3><div class="meta"><span class="tag">مواقف</span><span>7 دقائق</span></div></div></div>
+</section>
+
+<section>
+  <div class="sh"><h2>أخطاء كيديرها المغاربة</h2></div>
+  <div class="mis">
+    <span class="lab">خطأ شائع</span>
+    <div class="row x"><svg viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg><span class="en">I have 25 years</span></div>
+    <div class="row v"><svg viewBox="0 0 24 24"><path d="M5 12l5 5 9-10"/></svg><span class="en">I am 25 years old</span></div>
+    <p>ترجمة حرفية من الفرنسية والدارجة. شوف الأخطاء الباقية.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="brand"><div class="mark">E</div><span class="en">Englishy</span></div>
+  <p>تعلم الإنجليزية بالعربية، من تجربة مغربي كيتعلم بحالك.</p>
+  <nav><a href="#">من أنا</a><a href="#">اتصل بنا</a><a href="#">الخصوصية</a></nav>
+  <div class="copy"><span class="en">© 2026</span></div>
+</footer>
+</body></html>
